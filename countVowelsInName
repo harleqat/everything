@@ -1,0 +1,18 @@
+//First, I'm just printing out the number of vowels in the name.
+function countit(name) {
+  sname = name.toLowerCase();
+  count = 0;
+  for (var i = 0; i < name.length; i++) {
+    switch(sname[i]) {
+      case 'a':
+      case 'e':
+      case 'u':
+      case 'i':
+      case 'o':
+        count++;
+    }
+  }
+  console.log(count);
+}
+
+countit('Frederico');
