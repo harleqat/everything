@@ -16,3 +16,5 @@ function countit(name) {
 }
 
 countit('Frederico');
+countit('Preslava');
+countit('Aron');
