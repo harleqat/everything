@@ -1,3 +1,18 @@
 function wth(string) {
   return string.replace(/\s/g, '-');
 }
+
+//alternatively:
+
+function wth(string) {
+  var nstring = "";
+  for (var i=0; i < string.length; i++) {
+    if (string[i] == " ") {
+      nstring += "-";
+    } else {
+      nstring += string[i];
+    }
+  }
+  
+  return nstring;
+}
