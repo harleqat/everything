@@ -1,0 +1,25 @@
+//Game 1: make a collection of animals; be able to add new ones via a function; (bonus: prompt user for input line by line)
+
+var zoo = {
+  "tiger" : {
+    "name": "Henry",
+    "family": "Felidae",
+    "personality": "friendly",
+    "age": 7
+  }
+};
+//the zoo only has a tiger :(
+//add more animals!
+
+function newAnimal(animal, name, family, personality, age) {
+  var animalInfo = {
+    "name": name,
+    "family": family,
+    "personality": personality,
+    "age": age
+  };
+  
+  zoo[animal] = animalInfo;
+  return zoo;
+}
+//if one piece is unknown, enter in function like this: "newAnimal('koala','Sarah',undefined,undefined,7)"
